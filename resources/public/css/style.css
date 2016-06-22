@@ -1,0 +1,73 @@
+html {
+    background: url("/assets/output_JkQATy.gif") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font: icon;
+    font-size: 5vw;
+    font-stretch: ultra-expanded;
+    line-height: 1.2;
+    letter-spacing: 0.7rem;
+}
+
+@keyframes trans {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+h1, h3, .menu {
+    animation-name: trans;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    font-size: 2vw;
+    font-weight: 900;
+    padding-right: 1em;
+}
+
+.email {
+    background: url("/assets/mail.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+a {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    width: 1.5em;
+    height: auto;
+}
+
+a:hover {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
