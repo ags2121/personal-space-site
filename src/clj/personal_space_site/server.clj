@@ -14,7 +14,7 @@
 (def my-pool (mk-pool))
 
 (defn get-requests []
-  (httpkit/get "http://www.alexsilvamusic.us" (fn [_] (println "server polled"))))
+  (httpkit/get "http://www.personalspacetheband.com" (fn [_] (println "server polled"))))
 
 ;; every half hour poll the server
 (defn poll-server []

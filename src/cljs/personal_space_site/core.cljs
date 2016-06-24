@@ -1,13 +1,14 @@
 (ns personal-space-site.core
-  (:require ))
+  (:require [reagent.core :as r]
+            [cljs.spec :as s]))
 
 (enable-console-print!)
 
-(println "This text is printed from src/personal-space-site/core.cljs. Go ahead and edit it and see reloading in action.")
+(def page? #{:home :music :shows :pix :about :$$$})
 
-;; define your app data so that it doesn't get over-written on reload
+(s/def ::page page?)
 
-(defonce app-state (atom {:text "Hello world!"}))
+(defonce app-state (r/atom {:text "Hello world!"}))
 
 (.addEventListener (.querySelector js/document ".em") "click"
                    (fn [_]
