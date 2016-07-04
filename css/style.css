@@ -8,6 +8,12 @@ html {
     letter-spacing: 0.7rem;
 }
 
+.root {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
 @keyframes trans {
     from {opacity: 0.5;}
     to {opacity: 1;}
@@ -33,6 +39,7 @@ h1, h3, h5 {
     margin-top: 62px;
     margin-bottom: 62px;
     min-height: 328px;
+    flex: 1;
 }
 
 ul {
