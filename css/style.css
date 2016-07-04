@@ -5,9 +5,6 @@ html {
     -o-background-size: cover;
     background-size: cover;
     font: icon;
-    font-size: 5vw;
-    font-stretch: ultra-expanded;
-    line-height: 1.2;
     letter-spacing: 0.7rem;
 }
 
@@ -16,24 +13,96 @@ html {
     to {opacity: 1;}
 }
 
-h1, h3, .menu {
+h1 {
+    font-size: 8.5rem;
+    letter-spacing: 1.3rem;
+}
+
+h1, h3, h5, .menu {
     animation-name: trans;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+h1, h3, h5 {
     margin: 0;
 }
 
+.components {
+    margin-top: 62px;
+    margin-bottom: 62px;
+    min-height: 328px;
+}
+
+ul {
+    list-style: none;
+    padding: 0 0 0 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    /*background-color: rgba(239, 214, 214, 0.58);*/
+}
+
 li {
-    display: inline;
-    font-size: 2vw;
-    font-weight: 900;
-    padding-right: 1em;
+    display: flex;
+    align-items: flex-start;
+    margin-right: 4em;
+}
+
+.menu a {
+    color: #222;
+}
+
+.menu a:hover {
+    color: #ffffff;
+}
+
+a {
+    color: #222;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.menu a {
+    cursor: pointer;
+    padding: 0 0.5rem 0 0;
+    font-size: 1.6rem;
+    max-width: 140px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.links a {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    width: 5rem;
+    height: 5rem;
+}
+
+.links a:hover {
+    -moz-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.hidden {
+    display: none;
 }
 
 .email {
@@ -42,32 +111,4 @@ li {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-a {
-    position: relative;
-    cursor: pointer;
-    display: inline-block;
-    -moz-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    width: 1.5em;
-    height: auto;
-}
-
-a:hover {
-    -moz-transform: scale(0.6);
-    -ms-transform: scale(0.6);
-    -webkit-transform: scale(0.6);
-    transform: scale(0.6);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.hidden {
-    display: none;
 }
