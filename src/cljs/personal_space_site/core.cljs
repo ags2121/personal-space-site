@@ -39,7 +39,7 @@
       (into component-base body))))
 
 (defn app []
-  [:div
+  [:div.root
    [menu]
    [:div.components
     [component :home [:h1.test "Ecstatic Burbs"] [:h3 "Personal Space"]]
