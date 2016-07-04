@@ -101,11 +101,18 @@ a:hover {
     -ms-transform: scale(0.6);
     -webkit-transform: scale(0.6);
     transform: scale(0.6);
+    /*.color {*/
+        /*fill: white;*/
+    /*}*/
 }
 
 img {
     width: 5rem;
     height: 5rem;
+}
+
+svg .color {
+    fill: #222;
 }
 
 .hidden {
