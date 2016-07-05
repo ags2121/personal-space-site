@@ -9,6 +9,22 @@ html {
     min-height: 100%;
 }
 
+.email {
+    background: url("/assets/mail.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.still-bg {
+    background: url("/assets/still-back.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .root {
     display: flex;
     min-height: 100vh;
@@ -21,8 +37,12 @@ html {
 }
 
 h1 {
-    font-size: 8.5rem;
+    /*font-size: 8.5rem;*/
     letter-spacing: 1.3rem;
+}
+
+h3 {
+    letter-spacing: -4px;
 }
 
 h1, h3, h5, .menu {
@@ -37,9 +57,9 @@ h1, h3, h5 {
 }
 
 .components {
-    margin-top: 62px;
-    margin-bottom: 62px;
-    min-height: 328px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    min-height: 10rem;
     flex: 1;
 }
 
@@ -50,13 +70,13 @@ ul {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    /*background-color: rgba(239, 214, 214, 0.58);*/
+    background-color: rgba(239, 214, 214, 0.58);
 }
 
 li {
     display: flex;
     align-items: flex-start;
-    margin-right: 4em;
+    margin-right: 5rem;
 }
 
 .menu a {
@@ -102,12 +122,9 @@ a:hover {
     -ms-transform: scale(0.6);
     -webkit-transform: scale(0.6);
     transform: scale(0.6);
-    /*.color {*/
-        /*fill: white;*/
-    /*}*/
 }
 
-img {
+img, svg {
     width: 5rem;
     height: 5rem;
 }
@@ -116,14 +133,10 @@ svg .color {
     fill: #222;
 }
 
-.hidden {
-    display: none;
+svg:hover .color {
+    fill: white;
 }
 
-.email {
-    background: url("/assets/mail.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.hidden {
+    display: none;
 }

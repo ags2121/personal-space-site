@@ -1,6 +1,7 @@
 /target
 /*-init.clj
 /resources/public/js/compiled
+resources/.DS_Store
 out
 *.iml
 *.lein*
@@ -8,3 +9,4 @@ out
 .idea/
 .DS_Store
 *.log
+pom.xml

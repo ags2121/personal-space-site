@@ -18,12 +18,13 @@
                  [bk/ring-gzip "0.1.1"]
                  [ring.middleware.logger "0.5.0"]
                  [compojure "1.4.0"]
-                 [environ "1.0.2"]]
+                 [environ "1.0.2"]
+                 [clj-tagsoup "0.3.0" :exclusions [org.clojure/clojure]]]
 
   :plugins [[lein-figwheel "0.5.4-3"]
             [lein-cljsbuild "1.1.3" :exclusions [[org.clojure/clojure]]]]
 
-  :source-paths ["src"]
+  :source-paths ["src/clj" "src/cljs" "dev"]
 
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
 
@@ -31,7 +32,7 @@
 
   :cljsbuild {:builds
               {:app
-               {:source-paths ["src"]
+               {:source-paths ["src/cljs"]
 
                      ;; the presence of a :figwheel configuration here
                      ;; will cause figwheel to inject the figwheel client
@@ -100,7 +101,7 @@
   :profiles {:dev     {:dependencies [[figwheel-sidecar "0.5.4-3"]
                                       [com.cemerick/piggieback "0.2.1"]]
                        ;; need to add dev source path here to get user.clj loaded
-                       :source-paths ["src" "dev"]
+                       :source-paths ["src/cljs" "test/cljs" "dev"]
                        ;; for CIDER
                        ;; :plugins [[cider/cider-nrepl "0.12.0"]]
                        :repl-options {; for nREPL dev you really need to limit output
