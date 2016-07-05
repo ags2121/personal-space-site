@@ -6,6 +6,7 @@ html {
     background-size: cover;
     font: icon;
     letter-spacing: 0.7rem;
+    min-height: 100%;
 }
 
 .root {
