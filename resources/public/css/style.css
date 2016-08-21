@@ -65,24 +65,22 @@ h1, h3, h5 {
 
 ul {
     list-style: none;
-    padding: 0 0 0 0.5em;
+    /*padding: 0 0 0 0.5em;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
     background-color: rgba(239, 214, 214, 0.58);
+    width: 100%;
 }
 
-.links li {
-    margin-right: 5rem;
-}
-
-.menu li {
+li {
     margin-right: auto;
     margin-bottom: 0;
+    display: flex;
 }
 
-.menu li:last-child {
+li:last-child {
     margin-right: 0;
 }
 
@@ -173,9 +171,35 @@ svg:hover .color {
     }
 }
 
-@media (max-width: 494px) {
+@media (max-width: 542px) {
     .menu a {
         font-size: 1rem;
-        letter-spacing: 0.1rem;
+        /*letter-spacing: 0.1rem;*/
     }
+    .links a {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    img, svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+}
+
+@media (max-width: 448px) {
+    .menu a {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+    /*.links a {*/
+        /*width: 2rem;*/
+        /*height: 2rem;*/
+    /*}*/
+    /*img, svg {*/
+        /*width: 2rem;*/
+        /*height: 2rem;*/
+    /*}*/
+
 }
