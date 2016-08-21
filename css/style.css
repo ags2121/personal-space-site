@@ -73,10 +73,17 @@ ul {
     background-color: rgba(239, 214, 214, 0.58);
 }
 
-li {
-    display: flex;
-    align-items: flex-start;
+.links li {
     margin-right: 5rem;
+}
+
+.menu li {
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.menu li:last-child {
+    margin-right: 0;
 }
 
 .menu a {
@@ -139,4 +146,36 @@ svg:hover .color {
 
 .hidden {
     display: none;
+}
+
+/* Popover */
+.popover.open {
+  display: block;
+}
+.popover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  top: 92%;
+  left: -50%;
+  -webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+  -moz-filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+  filter: drop-shadow(0 0 6px rgba(0,0,0,.1));
+}
+
+@media (max-width: 643px) {
+    .menu a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 494px) {
+    .menu a {
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
+    }
 }
