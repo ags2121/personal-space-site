@@ -57,10 +57,14 @@ h1, h3, h5 {
 }
 
 .components {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     min-height: 10rem;
     flex: 1;
+}
+
+.components .shows {
+    background-color: rgba(239, 214, 214, 0.91)
 }
 
 ul {
@@ -83,6 +87,10 @@ li {
 .menu li {
     margin-bottom: 0.5rem;
     margin-top: 0.3rem;
+}
+
+li:first-child {
+    margin-left: 1rem;
 }
 
 li:last-child {
@@ -137,6 +145,17 @@ a:hover {
 img, svg {
     width: 5rem;
     height: 5rem;
+}
+
+.pix img {
+    width: 100%;
+    height: auto;
+    width: auto\9;
+    margin-bottom: 2rem;
+}
+
+.pix img:last-child {
+    margin-bottom: 0;
 }
 
 svg .color {
