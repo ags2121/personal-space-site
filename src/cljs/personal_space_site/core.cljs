@@ -57,14 +57,17 @@
    (for [component-name component-names]
      (if (not= component-name :home)
        [:li {:key component-name}
-        [:a {:class component-name :on-click #(reset! current-component component-name)}
+        [:a (merge {:class component-name}
+                   (if (= component-name :$$$)
+                     {:href "http://tinyengines.limitedrun.com/products/567473" :target "blank_"}
+                     {:on-click #(reset! current-component component-name)}))
          (clojure.string/upper-case (name component-name))]]))])
 
-(defn component [name & body]
+(defn component [component-name & body]
   (fn []
     (let [displayed-component-name @current-component
-          hidden? (not= name displayed-component-name)
-          component-base [:div {:class (str name " " (if hidden? "hidden"))}]]
+          hidden? (not= component-name displayed-component-name)
+          component-base [:div {:class (str (name component-name) " " (if hidden? "hidden"))}]]
       (into component-base body))))
 
 
@@ -73,7 +76,7 @@
 (defn g []
   (let [did-click? (r/atom false)]
     (fn []
-      [:div ])))
+      [:div])))
 
 (.addEventListener js/document "click"
                    (fn []
@@ -88,10 +91,17 @@
    [:div.components
     [component :home [:h1.test "Ecstatic Burbs"] [:h3 "Personal Space"]]
     [component :music [:h5 "Check these dope tunes."]]
-    [component :shows [:h5 "We got shows."]]
-    [component :pix [:h5 "We got pix"]]
+    [component :shows
+     [:a {:href "http://www.songkick.com/artists/7998353-personal-space", :class "songkick-widget", :data-theme "light", :data-track-button "on", :data-detect-style "true", :data-background-color "transparent"}]
+     ]
+    [component :pix
+     [:div
+      [:img {:src "/assets/ps1.jpg"}]
+      [:img {:src "/assets/ps2.jpg"}]
+      ]
+     ]
     [component :about [:h5 "Personal Space is a band."]]
-    [component :$$$ [:h5 "You can buy our music."]]]
+    ]
    [social]])
 
 (defn ^:export run []
