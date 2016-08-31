@@ -21,14 +21,6 @@ body {
     background: none;
 }
 
-.email {
-    background: url("/assets/mail.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 .root {
     display: flex;
     min-height: 100vh;
@@ -162,7 +154,7 @@ img, svg {
     height: 5rem;
 }
 
-.pix, .mail img {
+.pix img, .mail img {
     width: 100%;
     height: auto;
     width: auto\9;
