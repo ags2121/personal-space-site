@@ -90,17 +90,21 @@
    [menu]
    [:div.components
     [component :home [:h1.test "Ecstatic Burbs"] [:h3 "Personal Space"]]
-    [component :music [:h5 "Check these dope tunes."]]
+    [component :music [:h5 "Coming soon . . ."]]
     [component :shows
-     [:a {:href "http://www.songkick.com/artists/7998353-personal-space", :class "songkick-widget", :data-theme "light", :data-track-button "on", :data-detect-style "true", :data-background-color "transparent"}]
-     ]
+     [:a {:href "http://www.songkick.com/artists/7998353-personal-space", :class "songkick-widget", :data-theme "light", :data-track-button "on", :data-detect-style "true", :data-background-color "transparent"}]]
     [component :pix
      [:div
       [:img {:src "/assets/ps1.jpg"}]
-      [:img {:src "/assets/ps2.jpg"}]
+      [:img {:src "/assets/ps2.jpg"}]]]
+    [component :about
+     ;[:h5 "Personal Space is a band."]
+     [:div
+      [:p "\"Personal Space released their debut EP, The Early Universe Was Entirely Opaque, in the Spring of 2014. It was a promising glimpse into a band ripe with talent and ideas. But Personal Space would stay relatively quiet in the months to follow as the lineup shifted and a more focused version of the band would begin to take shape. Fast forward to the beginning of 2016, and Personal Space emerged from the studio with a complete, realized vision on their debut full-length. The LP, entitled Ecstatic Burbs, is amazingly accomplished for a debut album. With a mixture of styles and influences, Ecstatic Burbs is polished progressive pop for the indie rock crowd perhaps not seen since the likes of the great The Dismemberment Plan. And much like that band, Personal Space delves into heavy topics with charming abandon. Ecstatic Burbs surveys the saccharine, surreal landscape of early-aughts suburban coming of age, and all the weird contradictions thereof: the impossibility of violence in a world saturated with it; maladaptive responses to burgeoning male identity and sexuality, forged via internet world; over-determined life paths that turn out to have nothing to do with actual desires or reality. Yet, Personal Space infuses all of this with remarkable depth and humor. From the innocence of childhood to the confusion of adolescence and into the chaos of adulthood, the band hopes to find some sanity beyond it all. Ecstatic Burbs is quite simply, a rousing introduction to the masses for Personal Space.\""]
+      "- "
+      [:a {:href "http://www.tinyengines.net/bands/personal-space"} "TE"]
       ]
      ]
-    [component :about [:h5 "Personal Space is a band."]]
     ]
    [social]])
 

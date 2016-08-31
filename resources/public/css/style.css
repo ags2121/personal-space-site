@@ -45,7 +45,7 @@ h3 {
     letter-spacing: -4px;
 }
 
-h1, h3, h5, .menu {
+h1, h3, h5, .menu, p {
     animation-name: trans;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -66,6 +66,17 @@ h1, h3, h5 {
 .components .shows {
     background-color: rgba(239, 214, 214, 0.91)
 }
+
+.components .about {
+    background-color: rgba(239, 214, 214, 0.91);
+    letter-spacing: 0;
+}
+
+.components .about div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
 
 ul {
     list-style: none;
