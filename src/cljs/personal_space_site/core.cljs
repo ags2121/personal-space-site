@@ -3,7 +3,7 @@
 
 (enable-console-print!)
 
-(def component-names [:home :music :shows :pix :about :$$$])
+(def component-names [:home :music :shows :pix :about :buy])
 
 (defrecord SocialMedia [name url image])
 
@@ -62,7 +62,7 @@
      (if (not= component-name :home)
        [:li {:key component-name}
         [:a (merge {:class component-name}
-                   (if (= component-name :$$$)
+                   (if (= component-name :buy)
                      {:href "http://tinyengines.limitedrun.com/products/567473" :target "blank_"}
                      {:on-click #(reset! current-component component-name)}))
          (clojure.string/upper-case (name component-name))]]))])
