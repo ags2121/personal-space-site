@@ -63,7 +63,7 @@
        [:li {:key component-name}
         [:a (merge {:class component-name}
                    (if (= component-name :buy)
-                     {:href "http://tinyengines.limitedrun.com/products/567473" :target "blank_"}
+                     {:href "http://tinyengines.limitedrun.com/products/577089-personal-space-ecstatic-burbs-pre-order" :target "blank_"}
                      {:on-click #(reset! current-component component-name)}))
          (clojure.string/upper-case (name component-name))]]))])
 
