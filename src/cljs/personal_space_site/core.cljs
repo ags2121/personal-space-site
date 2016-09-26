@@ -89,7 +89,9 @@
    [menu]
    [:div.components
     [component :home [:h1.test "Ecstatic Burbs"] [:h3 "Personal Space"]]
-    [component :music [:h5 "Coming soon . . ."]]
+    [component :music
+     [:iframe {:src "https://embed.spotify.com/?uri=spotify%3Aartist%3A5BN5Uywy6N8nWwmIB7Jr7A", :width "100%", :height "380", :frameborder "0", :allowtransparency "true"}]
+     ]
     [component :shows
      [:a {:href "http://www.songkick.com/artists/7998353-personal-space", :class "songkick-widget", :data-theme "light", :data-track-button "on", :data-detect-style "true", :data-background-color "transparent"}]]
     [component :pix

@@ -59,20 +59,31 @@ h1, h3, h5 {
     flex: 1;
 }
 
-.components .shows {
-    background-color: rgba(239, 214, 214, 0.91)
-}
+/*.components .about {*/
+    /*letter-spacing: 0;*/
+/*}*/
 
-.components .about {
+.components .about div {
+    width: 80%;
     background-color: rgba(239, 214, 214, 0.91);
+    margin-left: 10%;
+    padding: 1rem;
     letter-spacing: 0;
 }
 
-.components .about div {
-    margin-left: 1rem;
-    margin-right: 1rem;
+.music iframe {
+    border: none;
+    height: 380px;
 }
 
+.shows iframe {
+    background-color: rgba(239, 214, 214, 0.91);
+}
+
+.music iframe, .shows iframe {
+    width: 80% !important;
+    margin-left: 10%;
+}
 
 ul {
     list-style: none;
