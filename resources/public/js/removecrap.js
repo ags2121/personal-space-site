@@ -7,5 +7,5 @@
 			}
 		}
 		if (--i) myLoop(i);      //  decrement i and call myLoop again if i > 0
-	}, 3000)
-})(10);
+	}, 300)
+})(15);
